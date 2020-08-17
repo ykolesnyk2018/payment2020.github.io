@@ -4120,6 +4120,9 @@ body {
   .payment__copyright-mobile {
     display: none;
   }
+    .payment__content-column{
+        max-width: 48%
+    }
 }
 
 @media (max-width: 1220px) {
@@ -4426,6 +4429,12 @@ body {
     padding: 15px 0;
     max-width: 470px;
   }
+    .payment__content.new{
+        flex-direction: row;
+    }
+    .new .payment__content-column{
+        max-width: 48%
+    }
 }
 
 @media (max-width: 1180px) {
@@ -4619,6 +4628,18 @@ body {
     .step-item__body.yk-row .item-choose{
         max-width: 500px;
         margin: 0 auto 30px auto;
+    }
+    .coins-btns img, .carts img, .new-payment-title img{
+        max-width: 100%;
+    }
+}
+@media (max-width: 840px) {
+    .payment__content.new{
+        flex-wrap: wrap;
+    }
+    .new .payment__content-column{
+        max-width: 100%;
+        margin-bottom: 25px;
     }
 }
 
