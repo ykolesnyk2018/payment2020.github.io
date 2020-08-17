@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>16BIT</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+
+        <!-- POPUP LOGIN -->
+        <div class="popup popup-login">
+            <div class="popup-table table">
+                <div class="cell">
+                    <div class="popup__content popup-login__content">
+                        <div class="popup-close"></div>
+                        <div class="popup__title">
+                            LOGIN
+                        </div>
+                        <div class="popup-login__body body-login">
+                            <div class="body-login__first">
+                                <div class="body-login__first-info">
+                                    <h3 class="body-login__first-info-title">Enter your private key</h3>
+                                    <ol>
+                                        <li>Paste your private key</li>
+                                        <li>Press LOGIN</li>
+                                    </ol>
+                                </div>
+                                <form action="#" class="body-login__first-form form-login">
+                                    <div class="form-login__input-box">
+                                        <input autocomplete="off" type="text" name="form[]" placeholder="Input value"
+                                            class="input form-login__input req">
+                                        <!-- <img class="form-login__input-refresh" src="img/login-refresh.svg"
+                                            alt="refresh">
+                                        <img class="form-login__input-warning" src="img/invoice-warning-1.png" alt="#"> -->
+                                    </div>
+                                    <div class="form-login__buttons buttons-login">
+                                        <button class="button-login button-login_paste">paste
+                                            <!-- <img src="img/copy-icon.png" alt="#"> -->
+                                        </button>
+                                        <button class="button-login button-login_login" type="submit">login</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="body-login__or">
+                                <span>or</span>
+                            </div>
+                            <div class="body-login__second">
+                                <a href="#" class="body-login__second-link">
+                                    login with <span></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- POPUP MESSAGE -->
+        <!-- <div class="popup popup-message">
+            <div class="popup-table table">
+                <div class="cell">
+                    <div class="popup__content popup-message__content">
+                        <div class="popup-close"></div>
+                        <div class="popup__title">
+                            YOUR ACCOUNT DETAILS
+                        </div>
+                        <div class="popup-message__header">
+                            Name EOS: <span class="notranslate">miamibeach</span>
+                        </div>
+                        <div class="popup-message__keys">
+                            <div class="popup-message__keys-header">
+                                KEY <span></span>
+                            </div>
+                            <div class="popup-message__keys-body body-keys">
+                                <div class="body-keys__item">
+                                    <div class="body-keys__item-title">owner</div>
+                                    <p class="body-keys__item-subtitle">
+                                        <span>Private:</span> <span class="key">5Jwds2iR7gfPG5Jwds2iR7gf</span>
+                                    </p>
+                                    <p class="body-keys__item-subtitle">
+                                        <span>Public:</span> <span class="key">fPGvANqkQNa5Jwds2iR7gfP</span>
+                                    </p>
+                                </div>
+                                <div class="body-keys__item">
+                                    <div class="body-keys__item-title">active</div>
+                                    <p class="body-keys__item-subtitle">
+                                        <span>Private:</span> <span class="key">5Jwds2iR7gfPG5Jwds2iR7gf</span>
+                                    </p>
+                                    <p class="body-keys__item-subtitle">
+                                        <span>Public:</span> <span class="key">fPGvANqkQNa5Jwds2iR7gfP</span>
+                                    </p>
+                                </div>
+                                <button class="body-keys__btn">copy all <img src="img/copy-icon.png"
+                                        alt="Copy"></button>
+                            </div>
+                        </div>
+                        <div class="popup-message__account-info">
+                            <p class="popup-message__account-info-title">Link to your account:</p>
+                            <div class="popup-message__account-info-link">
+                                <a href="#">https://pac.16bit.game/miamibeach</a>
+                                <button class="copy-btn">copy all</button>
+                            </div>
+                        </div>
+                        <div class="popup-message__warning">
+                            <img src="img/warning.png" alt="warning">warning
+                        </div>
+                        <div class="popup-message__info">
+                            <p>
+                                Please save your private keys in somewhere!
+                            </p>
+                            <p>
+                                And remember this way.
+                            </p>
+                            <p>
+                                If suddenly you can’t regain access to your account, that nobody can do this during 1
+                                month.
+                                After that period the Admin of the system will be able to restore it.
+                            </p>
+                            <label>
+                                <input class="check" type="checkbox" checked>
+                                <span class="check-lic"></span>
+                                I&nbsp;understood&nbsp;everything&nbsp;right
+                                and&nbsp;securely&nbsp;saved&nbsp;my&nbsp;keys
+                            </label>
+                        </div>
+                        <div class="popup-message__buttons">
+                            <button class="popup-message__btn-cancel">CANCEL</button>
+                            <a href="payment.html" class="popup-message__btn-continue">continue</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+
+        <!-- HEADER -->
+        <header class="header">
+            <div class="container header__container">
+                <div class="header__logo">
+                    <a href="#" title="16Bit.game"><img src="img/logo.svg" alt="Logo"><span>franchising</span></a>
+                </div>
+                <div class="header__translate">
+                    <!-- <a href="#" onclick="doGTranslate('en|en');return false;" title="English" class="gflag nturl"
+                        style="background-position:-0px -0px;"><img src="//gtranslate.net/flags/blank.png" height="16"
+                            width="16" alt="English" /></a>
+                    <a href="#" onclick="doGTranslate('en|ru');return false;" title="Russian" class="gflag nturl"
+                        style="background-position:-500px -200px;"><img src="//gtranslate.net/flags/blank.png"
+                            height="16" width="16" alt="Russian" /></a> -->
+                    <select class="header__translate-select" id="select-lang" onchange="doGTranslate(this);">
+                        <!-- <option value="">Select Language</option> -->
+                        <option value="en|af">Afrikaans</option>
+                        <option value="en|sq">Albanian</option>
+                        <option value="en|ar">Arabic</option>
+                        <option value="en|hy">Armenian</option>
+                        <option value="en|az">Azerbaijani</option>
+                        <option value="en|eu">Basque</option>
+                        <option value="en|be">Belarusian</option>
+                        <option value="en|bg">Bulgarian</option>
+                        <option value="en|ca">Catalan</option>
+                        <option value="en|zh-CN">Chinese (Simplified)</option>
+                        <option value="en|zh-TW">Chinese (Traditional)</option>
+                        <option value="en|hr">Croatian</option>
+                        <option value="en|cs">Czech</option>
+                        <option value="en|da">Danish</option>
+                        <option value="en|nl">Dutch</option>
+                        <option value="en|en" selected>English</option>
+                        <option value="en|et">Estonian</option>
+                        <option value="en|tl">Filipino</option>
+                        <option value="en|fi">Finnish</option>
+                        <option value="en|fr">French</option>
+                        <option value="en|gl">Galician</option>
+                        <option value="en|ka">Georgian</option>
+                        <option value="en|de">German</option>
+                        <option value="en|el">Greek</option>
+                        <option value="en|ht">Haitian Creole</option>
+                        <option value="en|iw">Hebrew</option>
+                        <option value="en|hi">Hindi</option>
+                        <option value="en|hu">Hungarian</option>
+                        <option value="en|is">Icelandic</option>
+                        <option value="en|id">Indonesian</option>
+                        <option value="en|ga">Irish</option>
+                        <option value="en|it">Italian</option>
+                        <option value="en|ja">Japanese</option>
+                        <option value="en|ko">Korean</option>
+                        <option value="en|lv">Latvian</option>
+                        <option value="en|lt">Lithuanian</option>
+                        <option value="en|mk">Macedonian</option>
+                        <option value="en|ms">Malay</option>
+                        <option value="en|mt">Maltese</option>
+                        <option value="en|no">Norwegian</option>
+                        <option value="en|fa">Persian</option>
+                        <option value="en|pl">Polish</option>
+                        <option value="en|pt">Portuguese</option>
+                        <option value="en|ro">Romanian</option>
+                        <option value="en|ru">Russian</option>
+                        <option value="en|sr">Serbian</option>
+                        <option value="en|sk">Slovak</option>
+                        <option value="en|sl">Slovenian</option>
+                        <option value="en|es">Spanish</option>
+                        <option value="en|sw">Swahili</option>
+                        <option value="en|sv">Swedish</option>
+                        <option value="en|th">Thai</option>
+                        <option value="en|tr">Turkish</option>
+                        <option value="en|uk">Ukrainian</option>
+                        <option value="en|ur">Urdu</option>
+                        <option value="en|vi">Vietnamese</option>
+                        <option value="en|cy">Welsh</option>
+                        <option value="en|yi">Yiddish</option>
+                    </select>
+                    <div id="google_translate_element2"></div>
+                </div>
+                <a href="#login" class="header__login-btn pl">
+                    <span>
+                        <svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 467.93 469">
+                            <defs>
+                                <style>
+                                    .cls-1 {
+                                        fill: #2ea64f;
+                                    }
+                                </style>
+                            </defs>
+                            <title>logout</title>
+                            <path class="cls-1"
+                                d="M468.27,234.5c0,129.51-105,234.5-234.5,234.5C111.45,469,11.12,375.33.33,255.82h190.8v64a21.31,21.31,0,0,0,36.39,15.07l85.28-85.27a21.3,21.3,0,0,0,0-30.14l-85.28-85.28a21.31,21.31,0,0,0-36.39,15.07v64H.33C11.12,93.67,111.45,0,233.77,0,363.28,0,468.27,105,468.27,234.5Z"
+                                transform="translate(-0.33 0)" />
+                        </svg>
+                    </span>
+                    Login
+                </a>
+            </div>
+        </header>
+
+        <section class="payment">
+            <div class="container payment__container">
+                <h2 class="title payment__title">
+                    <a href="index.html" class="btn-back" data-move="payment__tabs-title,1,1185">
+                        back to franchises
+                        <?xml version="1.0" encoding="iso-8859-1"?>
+                        <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 443.52 443.52"
+                            style="enable-background:new 0 0 443.52 443.52;" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M143.492,221.863L336.226,29.129c6.663-6.664,6.663-17.468,0-24.132c-6.665-6.662-17.468-6.662-24.132,0l-204.8,204.8
+                                    c-6.662,6.664-6.662,17.468,0,24.132l204.8,204.8c6.78,6.548,17.584,6.36,24.132-0.42c6.387-6.614,6.387-17.099,0-23.712
+                                    L143.492,221.863z" />
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                    PAYMENT
+                </h2>
+                
+                                <div class="step-item__body yk-row">
+                                    <div class="step-item__choose-item item-choose">
+                                        <label class="item-choose__label item-choose__label_green">
+                                            <input class="item-choose__input" name="franchise" type="radio"
+                                                form="steps-form" checked>
+                                            <span class="check__box"></span>
+                                            SUPER DEALER
+                                        </label>
+                                        <div class="item-choose__info">
+                                            <div class="item-choose__info-name">3 Years</div>
+                                            <div class="item-choose__info-percent">50%</div>
+                                            <div class="item-choose__info-price">1500 EOS</div>
+                                        </div>
+                                    </div>
+                                    <div class="step-item__choose-item item-choose">
+                                        <label class="item-choose__label item-choose__label_aqua">
+                                            <input class="item-choose__input" name="franchise" type="radio"
+                                                form="steps-form">
+                                            <span class="check__box"></span>
+                                            DEALER
+                                        </label>
+                                        <div class="item-choose__info">
+                                            <div class="item-choose__info-name">2 Years</div>
+                                            <div class="item-choose__info-percent">45%</div>
+                                            <div class="item-choose__info-price">1000 EOS</div>
+                                        </div>
+                                    </div>
+                                    <div class="step-item__choose-item item-choose">
+                                        <label class="item-choose__label item-choose__label_orange">
+                                            <input class="item-choose__input" name="franchise" type="radio"
+                                                form="steps-form">
+                                            <span class="check__box"></span>
+                                            SUB DEALER
+                                        </label>
+                                        <div class="item-choose__info">
+                                            <div class="item-choose__info-name">1 Years</div>
+                                            <div class="item-choose__info-percent">40%</div>
+                                            <div class="item-choose__info-price">500 EOS</div>
+                                        </div>
+                                    </div>
+                                </div>
+                <div class="payment__warning">
+                    <div class="payment__warning-title">
+                        <img src="img/warning.png" alt="#">
+                        <span>PAY ATTENTION PLEASE</span>
+                    </div>
+                    <!-- data-move="menu__body,1,768 -->
+                    <div class="payment__warning-text">
+                        <p>
+                            Your EOS account for the franchise will be created during the payment process. Please fill
+                            out the payment form carefully and correctly.
+                        </p>
+                        <p>
+                            <b>EOS&nbsp;address:</b> <a href="#" class="notranslate">popcornmaker</a>
+                            this is a smart contract account that creates new EOS wallets.
+                        </p>
+                        <p>
+                            <b>MEMO</b> is&nbsp;<a href="#">your&nbsp;ID</a>, and the smart
+                            contract
+                            will distinguish you from other users and credit the funds to your account.
+                        </p>
+                        <p>
+                            !!! Be sure to enter your MEMO on the payment page so your money doesn't dissolve in
+                            space!!!
+                        </p>
+                        <p>
+                            Please remember that this is a blockchain and all transactions on the network are
+                            irreversible. And also that all operations are performed by a robot - a smart contract. If
+                            you do not specify the MEMO field and send funds to popcornmaker, the system will not be
+                            able to recognize your account and you will not be able to return the money.
+                        </p>
+
+                    </div>
+                </div>
+                <div class="payment__tabs-title">Choose one: <br> pay by <b>crypto</b> or <b>card</b></div>
+                <div class="payment__content tabs">
+                    <ul class="payment__tabs tabs__caption">
+                        <li class="payment__tabs-item payment__tabs-item-crypto active">
+                            <p>EOS</p>
+                            <p>Crypto</p>
+                            <img class="tabs__img-eos" src="img/icon-EOS.png" alt="EOS">
+                            <img class="tabs__img-crypto" src="img/03_working_24px/eth/eth.svg" alt="crypto">
+                        </li>
+                        <li class="payment__tabs-item payment__tabs-item-card">
+                            <p>CREDIT CARD</p>
+                            <img class="tabs__img-card" src="img/icon-pay.png" alt="pay">
+                        </li>
+                    </ul>
+                    <div class="payment__content-column tabs__content active">
+                        <div class="pay-item margin-zero">
+                            <div class="pay-item__title">pay by eos</div>
+                            <div class="pay-item__content">
+                                <div class="pay-item__content-row eos-info">
+                                    <div class="eos-info__item eos-info__item-underline">
+                                        <span class="item-name">Address:</span><span class="decor"> *</span>
+                                        <span type="text" class="eos-value notranslate"
+                                            data-value="popcornmaker">popcornmaker</span>
+                                        <img src="img/copy-icon.png" alt="Copy">
+                                    </div>
+                                    <div class="eos-info__item eos-info__item-underline">
+                                        <span class="item-name">Memo:</span><span class="decor"> *</span> <span
+                                            class="eos-value notranslate">fgfhuevjfjddhiih</span>
+                                        <img src="img/copy-icon.png" alt="Copy">
+                                    </div>
+                                    <div class="eos-info__item eos-info__item_last">
+                                        <span class="item-name">Amount:</span> <span
+                                            class="amount-value notranslate">100
+                                            <span>eos</span></span>
+                                    </div>
+                                    <button class="eos-info__copy-btn">COPY ALL <img src="img/copy-icon.png"
+                                            alt="#"></button>
+                                </div>
+                                <div class="video-instruction-new">
+                                    <p>
+                                        If you don`t have EOS, you can copy the invoice and send it to a friend who has EOS.<br>
+                                        Or you can buy EOS at a variety of exchange offices.<br>
+                                        How to do this, watch the video.
+                                    </p>
+                                    <div class="instructions-card__video video video_enabled">
+                                        <a class="video__link" href="https://youtu.be/FJZtLvHtC5E">
+                                            <img class="video__media" src="img/video-img.png" alt="#">
+                                        </a>
+                                        <button class="video__button" aria-label="Play">
+                                            <svg width="68" height="48" viewBox="0 0 68 48">
+                                                <path class="video__button-shape"
+                                                    d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z">
+                                                </path>
+                                                <path class="video__button-icon" d="M 45,24 27,14 27,34"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="pay-bottom">
+                                    <div class="pay-bottom-title">
+                                        LIST OF EOS EXCHANGES
+                                    </div>
+                                    <p>Information provided by our partner</p>
+                                    <img src="img/logo-orig.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="payment__content-column tabs__content">
+                        <div class=" pay-item pay-item_card">
+                            <div class="pay-item__title pay-item__title_light">
+                                pay by credit card
+                            </div>
+                            <div class="new-payment-title">
+                                <img src="img/payeer.png" alt="">
+                            </div>
+                            <div class="credit-card__recepient recepient">
+                                <div class="carts">
+                                    <img src="img/carts.png" alt="">
+                                </div>
+                                <div class="coins-btns">
+                                    <img src="img/icons.png" alt="">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+                                <button class="recepient__btn">buy franchise</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="payment__copyright">
+                    <div class="payment__copyright-top">
+                        Powered&nbsp;by
+                    </div>
+                    <div class="payment__copyright-bottom">
+                        <img src="img/payment-copyright-image.png" alt="#"><a href="#"
+                            class="notranslate">changenow<b>.io</b></a>
+                    </div>
+                </div>
+                <div class="payment__copyright-mobile">
+                    <div class="payment__copyright-mobile-text">Powered by</div>
+                    <a class="payment__copyright-mobile-link notranslate" href="#">
+                        <span>change</span>
+                        <span>NOW</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+
+
+
+    <!-- jQuery -->
+    <script src="libs/jquery-3.4.1.min.js"></script>
+    <!-- jQuery -->
+    <script src="libs/slick.min.js"></script>
+    <!-- SCRIPTS -->
+    <script src="js/script.js"></script>
+
+    <script>
+        function googleTranslateElementInit2() { new google.translate.TranslateElement({ pageLanguage: 'en', autoDisplay: false }, 'google_translate_element2'); }
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"></script>
+
+    <script>
+        // /* <![CDATA[ */
+        eval(function (p, a, c, k, e, r) { e = function (c) { return (c < a ? '' : e(parseInt(c / a))) + ((c = c % a) > 35 ? String.fromCharCode(c + 29) : c.toString(36)) }; if (!''.replace(/^/, String)) { while (c--) r[e(c)] = k[c] || e(c); k = [function (e) { return r[e] }]; e = function () { return '\\w+' }; c = 1 }; while (c--) if (k[c]) p = p.replace(new RegExp('\\b' + e(c) + '\\b', 'g'), k[c]); return p }('6 7(a,b){n{4(2.9){3 c=2.9("o");c.p(b,f,f);a.q(c)}g{3 c=2.r();a.s(\'t\'+b,c)}}u(e){}}6 h(a){4(a.8)a=a.8;4(a==\'\')v;3 b=a.w(\'|\')[1];3 c;3 d=2.x(\'y\');z(3 i=0;i<d.5;i++)4(d[i].A==\'B-C-D\')c=d[i];4(2.j(\'k\')==E||2.j(\'k\').l.5==0||c.5==0||c.l.5==0){F(6(){h(a)},G)}g{c.8=b;7(c,\'m\');7(c,\'m\')}}', 43, 43, '||document|var|if|length|function|GTranslateFireEvent|value|createEvent||||||true|else|doGTranslate||getElementById|google_translate_element2|innerHTML|change|try|HTMLEvents|initEvent|dispatchEvent|createEventObject|fireEvent|on|catch|return|split|getElementsByTagName|select|for|className|goog|te|combo|null|setTimeout|500'.split('|'), 0, {}))
+    // /* ]]> */
+    </script>
+</body>
+
+</html>
