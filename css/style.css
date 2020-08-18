@@ -2691,7 +2691,15 @@ body {
 .payment__warning-text a {
   color: #6abcc4;
 }
-
+.payment__warning-text span {
+  color: #6abcc4;
+}
+.be_sure {
+  color: #ff3e00;
+}
+.remember{
+    color: #2f364a;
+}
 .payment__warning-text a:hover,
 .payment__warning-text a:focus {
   text-decoration: underline;
@@ -2902,7 +2910,7 @@ body {
   color: #282c34;
 }
 
-.payment__copyright-bottom a::after {
+payment__copyright-bottom a::after {
   content: "";
   position: absolute;
   width: 126px;
@@ -2913,7 +2921,7 @@ body {
       -ms-transform: translate(-50%, 0px);
           transform: translate(-50%, 0px);
   background-color: #282c34;
-}
+} --------
 
 .payment__copyright-bottom a:hover::after,
 .payment__copyright-bottom a:focus::after {
@@ -3216,7 +3224,6 @@ body {
   padding: 21.7px 0;
   margin: 0 auto;
   width: 100%;
-  max-width: 300px;
   background-color: transparent;
   border-radius: 10px;
   color: #939aaa;
@@ -4063,6 +4070,7 @@ body {
 }
 .pay-bottom img{
     max-width: 80%;
+    max-height: 65px;
     margin: 0 auto;
     display: block;
 }
@@ -4070,8 +4078,8 @@ body {
     font: 'Montserrat','Arial',sans-serif;
     font-size: 24px;
     font-weight: bold;
-    text-align: center;
-    color: #111f37;
+    text-align: left;
+    color: #fff;
 }
 .pay-bottom>p{   
     font-size: 18px;
@@ -4110,6 +4118,39 @@ body {
 .payment.margin-zero{
     margin: 0;
     padding: 30px 0 0 0;
+}
+.payment__copyright{
+    max-width: 100%;
+}
+.payment__copyright-top{
+    width: 100%;
+    display: block;
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+.payment__copyright-bottom{
+    padding: 0 0 20px 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.payment__copyright-bottom img{
+    height: 22px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.payment__copyright-bottom a{
+    display: block;
+    margin: 10px 0 0 0;
+}
+.credit-card__recepient_text{
+    margin: 0 35px;
+}
+.credit-card__recepient_text p{
+    font-size: 18px;
+    color: #9d9fa3;
+    line-height: 1.6;
+    font-family: 'Montserrat-Light','Arial',sans-serif;
 }
 @media (min-width: 1185px) {
   .payment__tabs {
