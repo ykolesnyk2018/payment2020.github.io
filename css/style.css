@@ -4421,7 +4421,8 @@ payment__copyright-bottom a::after {
   }
 
   .payment__tabs-title {
-    padding: 75px 0px 0px 0px;
+    padding: 20px 0;
+      margin: 0;
   }
 
   .payment .tabs__content {
@@ -4500,6 +4501,9 @@ payment__copyright-bottom a::after {
     }
     .white h2{
         color: #000;
+    }
+    .back-sbtn{
+        display: none;
     }
 }
 
