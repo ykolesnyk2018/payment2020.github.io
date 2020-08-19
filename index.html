@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>16BIT</title>
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -31,6 +31,27 @@
                             shortly
                         </div>
                         <a href="#" class="popup-thanks__button">OK</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+
+        <!-- POPUP START BUSINESS -->
+        <div class="popup popup-thanks popup-message popup-business">
+            <div class="popup-table table">
+                <div class="cell">
+                    <div class="popup__content popup-thanks__content">
+                        <div class="popup-close"></div>
+                        <div class="popup-business-title">DO YOU HAVE EOS WALLET?</div>
+                        <div class="business-img">
+                            <img src="img/business.png" alt="">
+                        </div>
+                        <div class="business-btns">
+                            <a href="http://backoffice.16bit.partners">yes</a>
+                            <a href="#details" class="card__footer-btn pl">NO</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -91,6 +112,7 @@
             <div class="popup-table table">
                 <div class="cell">
                     <div class="popup__content popup-details__content">
+                        <form>
                         <div class="popup-close"></div>
                         <div class="popup__title">
                             YOUR ACCOUNT DETAILS
@@ -106,26 +128,35 @@
                                 <div class="body-keys__item">
                                     <div class="body-keys__item-title">owner</div>
                                     <p class="body-keys__item-subtitle">
-                                        <span class="key">5Jwds2iR7gfPG5Jwds2iR7gf</span><button class="copy-btn">copy
+                                        <span class="key" id="c1">5Jwds2iR7gfPG5Jwds2iR7gf</span><button class="copy-btn" onclick="copytext('#c1')">copy
                                             all</button>
                                     </p>
                                 </div>
                                 <div class="body-keys__item">
                                     <div class="body-keys__item-title">active</div>
                                     <p class="body-keys__item-subtitle">
-                                        <span class="key">5Jwds2iR7gfPG5Jwds2iR7gf</span><button class="copy-btn">copy
+                                        <span class="key" id="c2">5Jwds2iR7gfPG5Jwds2iR7gf</span><button class="copy-btn" onclick="copytext('#c2')">copy
                                             all</button>
                                     </p>
                                 </div>
+                                <span id="c4" class="hide">
+                                    Your private keys from backoffice.16bit.partners 
+                                    Owner:
+                                    5JFVT7qHKaZnKJm5pLLddK42c4Ns
+                                    Active:
+                                    ddK42c4NsSGZpsDJEkZB8SdLdMau
+                                    Link to your virtual office:
+                                    https://onyx.16Bit.partners/maimibeach
+                                </span>
                             </div>
                         </div>
                         <div class="popup-details__account-info">
                             <p class="popup-details__account-info-title">Link to your account:</p>
                             <div class="popup-details__account-info-link">
-                                <a href="#">https://pac.16bit.game/miamibeach</a>
-                                <button class="copy-btn">copy all</button>
+                                <a href="#" id="c3">https://pac.16bit.game/miamibeach</a>
+                                <button class="copy-btn" onclick="copytext('#c3')">copy all</button>
                             </div>
-                            <button class="body-keys__btn">copy all <img src="img/copy-icon.png" alt="Copy"></button>
+                            <button class="body-keys__btn" onclick="copytext('#c4')">copy all <img src="img/copy-icon.png" alt="Copy"></button>
                         </div>
                         <div class="popup-details__warning">
                             <img src="img/warning.png" alt="warning">warning
@@ -143,7 +174,7 @@
                                 After that period the Admin of the system will be able to restore it.
                             </p>
                             <label>
-                                <input class="check" type="checkbox" checked>
+                                <input class="check" type="checkbox" required>
                                 <span class="check-lic"></span>
                                 I&nbsp;understood&nbsp;everything&nbsp;right
                                 and&nbsp;securely&nbsp;saved&nbsp;my&nbsp;keys
@@ -153,6 +184,7 @@
                             <button class="popup-details__btn-cancel">CANCEL</button>
                             <a href="payment.html" class="popup-details__btn-continue">continue</a>
                         </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -273,12 +305,12 @@
                                 <span>Here and just now you have a real chance to start your own
                                     online-business in few minutes.</span>
                                 <span>
-                                    For getting more information about <a href="#">16Bit.game</a> franchise, please, see
+                                    For getting more information about <a href="https://app.16bit.game/#/" target="_blank">16Bit.game</a> franchise please see
                                     the
                                     project.
                                 </span>
                             </p>
-                            <a href="#" class="major__link">See the project</a>
+                            <a href="libs/16Bit.game%20Project%202020%20(ENG).pdf" target="_blank" class="major__link">See the project</a>
                         </div>
                         <div class="major__content-column">
                             <div class="major__bg-image">
@@ -491,6 +523,7 @@
                             the General Partner will receive a Commission from absolutely all levels of its structure,
                             regardless of their number.
                         </div>
+                        <a href="libs/16Bit.game%20Project%202020%20(ENG).pdf" target="_blank" class="major__link">MARKETING PLAN</a>
                     </div>
                 </div>
             </section>
@@ -609,7 +642,7 @@
                                 <div class="step-item__body">
                                     <img src="img/mac2.png" alt="#">
                                 </div>
-                                <a href="#message" class="step-item__btn pl">START BUSINESS</a>
+                                <a href="#business" class="step-item__btn pl">START BUSINESS</a>
                                 <div class="step-item__footer">
                                     Get your own online business <br> in just a few minutes
                                 </div>
@@ -716,8 +749,16 @@
             </div>
         </footer>
 
-    </div>
-
+    <script>
+        function copytext(el) {
+            var $tmp = $("<textarea>");
+            $("body").append($tmp);
+            $tmp.val($(el).text()).select();
+            document.execCommand("copy");
+            $tmp.remove();
+             alert("text copied") 
+        }
+    </script>
 
 
     <!-- jQuery -->
