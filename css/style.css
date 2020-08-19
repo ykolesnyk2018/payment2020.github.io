@@ -1548,6 +1548,7 @@ body {
   font-family: 'Montserrat-Light','Arial',sans-serif;
   line-height: 1.1;
   cursor: pointer;
+  z-index: 5;
 }
 
 .item-choose__label-text {
