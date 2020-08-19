@@ -1521,7 +1521,7 @@ body {
 }
 
 .item-choose {
-  margin: 0px 0px 15px 0px;
+  margin: 0 0 15px 0;
   background-color: #1c2f47;
   max-width: 220px;
   border-radius: 5px;
