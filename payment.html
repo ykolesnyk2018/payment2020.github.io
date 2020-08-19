@@ -458,23 +458,26 @@
     <!-- SCRIPTS -->
     <script src="js/script.js"></script>
     <script>
-        $('#franchise1').on('click', function(){      
+        $('#franchise1').on('click', function(){
+            $('.franchise2').removeClass('active');
+            $('.franchise3').removeClass('active');
+            
             $('.franchise1').addClass('active');    
             $('.value-cal').text("1500");
-            $('.franchise2').removeClass('active');
-            $('.franchise3').removeClass('active');
         });
-        $('#franchise2').on('click', function(){      
+        $('#franchise2').on('click', function(){
+            $('.franchise1').removeClass('active');
+            $('.franchise3').removeClass('active');
+            
             $('.franchise2').addClass('active');    
             $('.value-cal').text("1000");
-            $('.franchise1').removeClass('active');
-            $('.franchise3').removeClass('active');
         });
-        $('#franchise3').on('click', function(){      
-            $('.franchise3').addClass('active');    
-            $('.value-cal').text("500");
+        $('#franchise3').on('click', function(){  
             $('.franchise2').removeClass('active');
             $('.franchise1').removeClass('active');
+            
+            $('.franchise3').addClass('active');    
+            $('.value-cal').text("500");
         });
         
         function copytext(el) {
