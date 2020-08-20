@@ -375,7 +375,69 @@ h6 {
 .footer__site-link {
   color: #69bbc3;
 }
-
+.how_to_pay{
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.how_title{
+   color: #3e3e3e;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.how_desc{
+    font-size: 18px;
+    margin: 40px 0;
+    color: #a4a6aa;
+}
+.step_title{
+    text-transform: uppercase;
+    color: #001935;
+    padding: 35px 0 25px 25px;
+    background-color: #e6e8ed;
+    font-size: 24px;
+    font-family: "Montserrat-Bold";
+}
+.how_pay_info{
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 18px;
+    background-color: #ddedda;
+    position: relative;
+    padding: 20px 0 20px 70px;
+    text-align: left;
+}
+.final_text{
+    font-size: 18px;
+    color: #a4a6aa;
+    margin: 30px;
+}
+.final_step_2{
+    position: absolute;
+    left: 20px;
+    top: 20%;
+    display: block;
+    height: 38px;
+    width: 38px;
+}
+.step_descr span{
+    color: #00bcc5;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+.step_descr{
+    padding: 30px;
+    font-size: 18px;
+    color: #a4a6aa;
+}
+.how_pay_img{
+    position: absolute;
+    left: 20px;
+    top: 20%;
+    display: block;
+    height: 38px;
+    width: 38px;
+}
 .footer__site-link:hover,
 .footer__site-link:focus {
   text-decoration: underline;
@@ -4076,7 +4138,7 @@ payment__copyright-bottom a::after {
 }
 .pay-bottom img{
     height: 65px;
-    margin: 0 auto;
+    margin: 187px auto 0;
     display: block;
 }
 .pay-bottom-title{
@@ -4085,6 +4147,15 @@ payment__copyright-bottom a::after {
     font-weight: bold;
     text-align: left;
     color: #fff;
+    margin: 100px 0;
+}
+{
+    text-transform: uppercase;
+    color: #001935;
+    padding: 35px 0 25px 25px;
+    background-color: #ceedd8;
+    font-size: 24px;
+    font-family: "Montserrat-Bold";
 }
 .pay-bottom>p{   
     font-size: 18px;
@@ -4093,6 +4164,7 @@ payment__copyright-bottom a::after {
     font-family: 'Montserrat-Light','Arial',sans-serif;
     text-align: center;
     padding: 20px 0;
+    margin: 100px 0;
 }
 .credit-card__recepient{
     font-size: 16px;
@@ -4101,7 +4173,7 @@ payment__copyright-bottom a::after {
     font-family: 'Montserrat-Light','Arial',sans-serif;
 }
 .coins-btns{
-    margin: 40px 0 50px 0;
+    margin-top: 40px;
     text-align: center;
 }
 .carts{
@@ -4716,6 +4788,13 @@ payment__copyright-bottom a::after {
     text-align: left;
     margin: 0;
   }
+    
+    .pay-bottom-title{
+        margin: 200px auto;
+    } 
+    .pay-bottom>p{
+        margin: 250px auto;
+    }
 
   .footer__tagline {
     text-align: left;
@@ -4817,12 +4896,19 @@ payment__copyright-bottom a::after {
         max-width: 100%;
         margin-bottom: 25px;
     }
+     .step_title{
+        font-size: 18px;
+    }
+    .step_descr{
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 767.98px) {
     .payment__title{
         padding: 0;
     }
+    
   body.lock {
     width: 100%;
     overflow: hidden;
