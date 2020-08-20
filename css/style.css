@@ -135,6 +135,7 @@ ul li {
 
 img {
   vertical-align: top;
+  height: 38px;
 }
 
 h1,
@@ -4889,6 +4890,15 @@ payment__copyright-bottom a::after {
     }
 }
 @media (max-width: 840px) {
+    .pay-bottom-title{
+        margin: 20px auto;
+    }
+    .pay-bottom>p {
+        margin: 20px auto;
+    }
+    .pay-bottom img{
+        margin: 20px auto;
+    }
     .payment__content.new{
         flex-wrap: wrap;
     }
