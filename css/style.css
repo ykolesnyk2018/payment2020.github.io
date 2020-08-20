@@ -2178,6 +2178,7 @@ body {
 .popup-details__warning img {
   display: inline-block;
   margin: 0px 25px 0px 0px;
+  height: 38px;
 }
 
 .popup-details__info {
