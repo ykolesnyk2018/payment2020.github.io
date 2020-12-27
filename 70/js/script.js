@@ -29,7 +29,9 @@ $(document).ready(function(){
 	  dots: true,
 	  infinite: true,
 	  speed: 300,
-	  slidesToShow: 1
+	  slidesToShow: 1,
+        autoplay: true,
+    autoplaySpeed: 2000,
 	});
     $('.our-par-slider').slick({
 	  dots: false,
@@ -37,6 +39,8 @@ $(document).ready(function(){
 	  speed: 300,
 	  slidesToShow: 5,
       variableWidth: true,
+        autoplay: true,
+    autoplaySpeed: 2000,
       responsive: [
             {
               breakpoint: 940,
@@ -62,6 +66,8 @@ $(document).ready(function(){
 	  speed: 300,
 	  slidesToShow: 5,
       variableWidth: true,
+        autoplay: true,
+    autoplaySpeed: 2000,
         responsive: [
             {
               breakpoint: 1170,
@@ -93,6 +99,8 @@ $(document).ready(function(){
 	  speed: 300,
 	  slidesToShow: 3,
       variableWidth: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
         responsive: [
             {
               breakpoint: 1170,
