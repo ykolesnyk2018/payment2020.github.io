@@ -17,7 +17,7 @@
 @font-face {
 	font-family: 'MyriadPro-Regular';
 	src: url('fonts/MyriadPro-Regular/MyriadPro-Regular.eot');
-	src: local('fonts/MyriadPro-Regular/MyriadPro-Regular'), local('OpenSans-Regular'),
+	src: local('fonts/MyriadPro-Regular/MyriadPro-Regular'), local('MyriadPro-Regular'),
 		url('fonts/MyriadPro-Regular/MyriadPro-Regular.eot') format('embedded-opentype'),
 		url('fonts/MyriadPro-Regular/MyriadPro-Regular.woff') format('woff'),
 		url('fonts/MyriadPro-Regular/MyriadPro-Regular.ttf') format('truetype');
