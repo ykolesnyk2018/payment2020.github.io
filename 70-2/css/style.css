@@ -1,7 +1,7 @@
 @font-face {
 	font-weight: 400;
 	src: url('fonts/Montserrat-Regular/Montserrat-Regular.eot');
-	src: local('fonts/Montserrat-Regular/Montserrat-Regular'), local('OpenSans-Regular'),
+	src: local('fonts/Montserrat-Regular/Montserrat-Regular'), local('Montserrat-Regular'),
 		url('fonts/Montserrat-Regular/Montserrat-Regular.eot') format('embedded-opentype'),
 		url('fonts/Montserrat-Regular/Montserrat-Regular.woff') format('woff'),
 		url('fonts/Montserrat-Regular/Montserrat-Regular.ttf') format('truetype');
@@ -9,7 +9,7 @@
 @font-face {
 	font-weight: 900;
 	src: url('fonts/Montserrat-Bold/Montserrat-Bold.eot');
-	src: local('fonts/Montserrat-Bold/Montserrat-Bold'), local('OpenSans-Regular'),
+	src: local('fonts/Montserrat-Bold/Montserrat-Bold'), local('Montserrat-Bold'),
 		url('fonts/Montserrat-Bold/Montserrat-Bold.eot') format('embedded-opentype'),
 		url('fonts/Montserrat-Bold/Montserrat-Bold.woff') format('woff'),
 		url('fonts/Montserrat-Bold/Montserrat-Bold.ttf') format('truetype');
