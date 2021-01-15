@@ -40,7 +40,9 @@ $(document).ready(function(){
       slidesToShow: 1,
       slidesToScroll: 1,
       arrows: false,
-      asNavFor: '.slider-nav'
+      asNavFor: '.slider-nav',
+	  speed: 0,
+	  fade: true
     });
     $('.slider-nav').slick({
       arrows: false,
@@ -61,7 +63,7 @@ $(document).ready(function(){
       /* toggle */
 	  $(function(){
 		  $("#typed").typed({
-            strings: ["WILDBERRIES", "ozon", "Яндек Маркет", "lamoda", "Aliexpress", "goods.ru"], // строки выводимые в печать
+            strings: ["WILDBERRIES", "OZON", "Яндек Маркет", "lamoda", "Aliexpress", "goods.ru"], // строки выводимые в печать
             typeSpeed: 100, // скорость набора
             backSpeed: 0, // скорость удаления текста
             backDelay: 400, // пауза перед удалением текста
@@ -70,7 +72,7 @@ $(document).ready(function(){
             showCursor: true
         });
 		  $("#typed2").typed({
-			strings: ["ozon", "Яндек Маркет", "lamoda", "Aliexpress", "goods.ru","WILDBERRIES"], // строки выводимые в печать
+			strings: ["OZON", "Яндек Маркет", "lamoda", "Aliexpress", "goods.ru","WILDBERRIES"], // строки выводимые в печать
             typeSpeed: 100, // скорость набора
             backSpeed: 0, // скорость удаления текста
             backDelay: 400, // пауза перед удалением текста
@@ -79,7 +81,7 @@ $(document).ready(function(){
             showCursor: true
 		  });
 		  $("#typed3").typed({
-			strings: ["Яндек Маркет", "lamoda", "Aliexpress", "goods.ru","WILDBERRIES","ozon"], // строки выводимые в печать
+			strings: ["Яндек Маркет", "lamoda", "Aliexpress", "goods.ru","WILDBERRIES","OZON"], // строки выводимые в печать
             typeSpeed: 100, // скорость набора
             backSpeed: 0, // скорость удаления текста
             backDelay: 400, // пауза перед удалением текста
@@ -88,7 +90,7 @@ $(document).ready(function(){
             showCursor: true
 		  });
 		  $("#typed4").typed({
-			strings: ["lamoda", "Aliexpress", "goods.ru","WILDBERRIES","ozon","Яндек Маркет"], // строки выводимые в печать
+			strings: ["lamoda", "Aliexpress", "goods.ru","WILDBERRIES","OZON","Яндек Маркет"], // строки выводимые в печать
             typeSpeed: 100, // скорость набора
             backSpeed: 0, // скорость удаления текста
             backDelay: 400, // пауза перед удалением текста
@@ -97,7 +99,7 @@ $(document).ready(function(){
             showCursor: true
 		  });
 		  $("#typed5").typed({
-			strings: ["Aliexpress", "goods.ru","WILDBERRIES","ozon","Яндек Маркет", "lamoda"], // строки выводимые в печать
+			strings: ["Aliexpress", "goods.ru","WILDBERRIES","OZON","Яндек Маркет", "lamoda"], // строки выводимые в печать
             typeSpeed: 100, // скорость набора
             backSpeed: 0, // скорость удаления текста
             backDelay: 400, // пауза перед удалением текста
@@ -106,7 +108,7 @@ $(document).ready(function(){
             showCursor: true
 		  });
 		  $("#typed6").typed({
-			strings: ["goods.ru","WILDBERRIES","ozon","Яндек Маркет", "lamoda", "Aliexpress"], // строки выводимые в печать
+			strings: ["goods.ru","WILDBERRIES","OZON","Яндек Маркет", "lamoda", "Aliexpress"], // строки выводимые в печать
             typeSpeed: 100, // скорость набора
             backSpeed: 0, // скорость удаления текста
             backDelay: 400, // пауза перед удалением текста
@@ -115,4 +117,6 @@ $(document).ready(function(){
             showCursor: true
 		  });
 	  });
+	
+     new WOW().init();
 });

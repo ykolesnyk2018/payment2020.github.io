@@ -282,12 +282,13 @@ header>.container{
     border-radius: 9px;
     opacity: 1;
     display: inline-block;
-    padding: 20px 18px 20px 18px;
+    padding: 19px 17px 19px 17px;
+	border: 1px solid #7202BB;
 }
-.success-right-btn a:hover{
-    background: #fff;
-    color: #7202BB;
+.success-right-btn a:hover:hover{
     transition: .3s;
+    background: #F2F2F2;
+    color: #7202BB;
 }
 .services{
     margin-top: 139px;
@@ -928,6 +929,13 @@ footer>.container{
     color: #fff;
     text-decoration: none;
     padding: 0 33px 0 32px;
+	box-sizing: border-box;
+    border: 1px solid #7202BB;
+}
+.main-banner-btn a:hover{
+    transition: .3s;
+    background: #fff;
+    color: #7202BB;
 }
 .main-banner-to__right{
     width: 568px;
@@ -1023,6 +1031,7 @@ footer>.container{
     align-items: center;
     position: relative;
     margin: 0 45px 0 0;
+	cursor: pointer;
 }
 .slider-nav .slick-slide.slick-current:after{
     content: "";
